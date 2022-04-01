@@ -52,6 +52,7 @@ public class Robot {
     }
 
     public static void moveRobot(Robot robot, int toX, int toY) {
+        // вращаем и двигаем робота к переданным координатам
         while (robot.getX() != toX || robot.getY() != toY) {
             while (toX > robot.getX()) {
                 while (robot.getDirection() != Direction.RIGHT) {
